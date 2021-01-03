@@ -7,6 +7,8 @@
   "dependencies": {
     "@deckdeckgo/highlight-code": "^2.2.2",
     "@fontsource/open-sans": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "esm": "^3.2.25",
     "fontsource-open-sans": "^4.0.0",
     "gatsby": "^2.26.1",
     "gatsby-cli": "^2.16.2",
@@ -47,7 +49,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
