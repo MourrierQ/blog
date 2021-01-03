@@ -8,7 +8,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
-import Typography from '../styles/typography';
+import Typography from '../styles/Typography';
 import Nav from './Nav';
 
 const LayoutStyles = styled.div`
